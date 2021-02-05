@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+
+  <link rel="stylesheet" href="./baguettebox/baguetteBox.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+<div class="top-line"></div>
+  <div class="content">
+    <div class="row">
+      <div class="main-title">
+        <h1>
+          <!-- {{ heading }} -->
+          Отчет по диагностике автомобиля
+        </h1>
+      </div>
+    </div>
+      <div class="row">
+        <div class="gallery">
+
+
+          <!-- {% for path in images %}
+          <img src="{{ path }}">
+          <a class="img-wrap" href="{{ path }}">
+            <img src="{{ path }}" alt="Photo">
+          </a>
+          {% endfor %} -->
+
+          <a class="img-wrap" href="http://placehold.it/1200x1200?text=1">
+            <img src="http://placehold.it/1200x1200?text=1" alt="Photo">
+          </a>
+          <a class="img-wrap" href="http://placehold.it/720x1200?text=2">
+            <img src="http://placehold.it/720x1200?text=2" alt="Photo">
+          </a>
+          <a class="img-wrap" href="http://placehold.it/1200x720?text=3">
+            <img src="http://placehold.it/1200x720?text=3" alt="Photo">
+          </a>
+          <a class="img-wrap" href="http://placehold.it/350x350?text=4">
+            <img src="http://placehold.it/350x350?text=4" alt="Photo">
+          </a>
+          <a class="img-wrap" href="http://placehold.it/720x720?text=5">
+            <img src="http://placehold.it/720x720?text=5" alt="Photo">
+          </a>
+          <a class="img-wrap" href="http://placehold.it/640x3200?text=6">
+            <img src="http://placehold.it/640x3200?text=6" alt="Photo">
+          </a>
+          <a class="img-wrap" href="http://placehold.it/3200x640?text=7">
+            <img src="http://placehold.it/3200x640?text=7" alt="Photo">
+          </a>
+
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="notes-block">
+          <h4 class="notes-title">Примечания специалиста по отчету:</h4>
+          <div class="notes">
+
+            <!-- {% for p in text %}
+            <p>{{ p }}</p>
+            {% endfor %} -->
+
+            <p>Приграный из США.</p>
+            <p>Двигатель целый нужно поварить аргоном пастель не большая трещина.</p>
+            <p>Коробка целая на трещине не большая трещина.</p>
+            <p>Автомобиль отдефектован.</p>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="about-specialist">
+          <p class="specialist-name">Специалист: <span>
+             <!-- {{ specialist }} -->
+             Specialist
+             </span></p>
+          <p class="date">Дата: <span>
+            <!-- {{ date }} -->
+            05.02.2021
+          </span></p>
+        </div>
+      </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <a href="mailto:info@diagnostic-auto.ru">info@diagnostic-auto.ru</a>
+    </div>
+  </div>
+
+  <script src="./baguettebox/baguetteBox.min.js"></script>
+  <script>
+    window.addEventListener('load', function () {
+      baguetteBox.run('.gallery');
+    });
+    const saveBtn = document.querySelector('.save-btn');
+  </script>
+
+</body>
+
+</html>
